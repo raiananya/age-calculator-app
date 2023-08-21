@@ -1,0 +1,154 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 10%;
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+#content{
+    height: max-content;
+    width: 1000px;
+    padding: 5%;
+    border-bottom-right-radius: 30%;
+    background-color: white;
+}
+#inputs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.15cm;
+}
+#inputs div{
+    padding: 2%;
+    margin-right: 20px;
+}
+#inputs label{
+    font-weight:300;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+}
+#inputs input{
+    border-radius: 10px;
+    width: 150px;
+    padding: 7%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#inputs ::placeholder{
+    color: hsl(0, 1%, 44%);
+}
+#break_btn{
+    display: flex;
+    align-items: center;
+}
+#line{
+    flex-grow: 1;
+}
+#go_button{
+    display: flex;
+    align-items: center;
+}
+#go_button button{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: hsl(259, 70%, 55%);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#go_button button:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: black;
+}
+#result{
+    margin-top: 30px;
+    line-height: 5px;
+    font-size: 4rem;
+    text-align: left;
+    display: block;
+    font-weight: 700;
+    font-style: italic;
+}
+.data{
+    color:  hsl(259, 61%, 54%);
+}
+#errorDate, 
+#errorMonth,
+#errorYear{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+    /* letter-spacing: 0.15cm; */
+    flex-basis: 100%;
+    display: none;
+}
+
+#dateInput.invalid,
+#monthInput.invalid,
+#yearInput.invalid {
+    border-color: red; 
+}
+@media (min-width: 376px) and (max-width: 1440px) {
+    body {
+        padding: 3% 5%; /
+    }
+
+    #content {
+        padding: 2%;
+    }
+
+    #inputs input {
+        padding: 4%; 
+        font-size: 1.2rem; 
+    }
+
+    #go_button button {
+        width: 40px; 
+        height: 40px;
+    }
+
+    #result {
+        padding: 2%;
+        font-size: 3rem;
+    }
+
+    #errorDate,
+    #errorMonth,
+    #errorYear {
+        font-size: 0.5rem; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
